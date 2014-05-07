@@ -14,10 +14,10 @@ I gave the name 'bumble' to the app.
         bumble_controllers_js (static resources/bumble_controllers.js)
         bumble_services_js (static resources/bumble_services.js)
         bumble_bundle</strong> (static resources/bundle/bumble_bundle.zip)
-2) Add the remoteTK class
+2) Add the remoteTK class(The class is Available here: https://github.com/developerforce/Force.com-JavaScript-REST-Toolkit)
 ##
       Create a new Class, copy and paste the code from  'sf assets/RemoteTKController.cls'
-      (The class is Available here : https://github.com/developerforce/Force.com-JavaScript-REST-Toolkit)
+      
 3) Add the remoteTK Component (Available here : https://github.com/developerforce/Force.com-JavaScript-REST-Toolkit)
 ##
     Create a new component 'remoteTK', copy and paste the code from 'sf assets/RemoteTK.component'
@@ -32,8 +32,8 @@ I gave the name 'bumble' to the app.
     
 5) Running the app:
   <br/ > Make sure you have permissions to create/ update/ delete the records from 'Contacts'
-  <br /> Make sure your code editor in the visual force page is closed(not even minimised)
-  
+  <br/> Make sure your code editor in the visual force page is closed(not even minimised)
+  <br/> Preview bumble_index_html 
 
 #More Info
 I took the idea from the following excellent tutorial: https://developer.salesforce.com/blogs/developer-relations/2014/04/building-beautiful-mobile-apps-in-visualforce-using-angularjs-and-ionic-part-1.html
