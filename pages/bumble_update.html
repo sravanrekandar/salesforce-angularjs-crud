@@ -1,0 +1,15 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <h1 ng-init="init()">Update : {{title}} <button class="btn btn-default" ng-click="save()">Save</button></h1>
+    <table class="table table-striped table-condensed">
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" ng-model="record.Name" ></input></td>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <td>{{record.Id}}</td>
+            </tr>
+        </tbody>
+    </table>
+</apex:page>

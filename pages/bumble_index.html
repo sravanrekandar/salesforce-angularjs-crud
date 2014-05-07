@@ -1,0 +1,32 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <html>
+        <head>
+            <meta charset="utf-8"></meta>
+            <title>Bumble App</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"></link>
+        </head>
+        <body>
+            <div class="page-container container" ng-app="bumble">
+                <ui-view></ui-view>
+                <hr />
+                <div class="btn-group">
+                    <a ui-sref="create" class="btn btn-default">Create</a>
+                    <a ui-sref="receive" class="btn btn-default">Receive All</a>
+                    <a ui-sref="receive" class="btn btn-default" disabled = "disabled">Receive by Id</a>
+                    <a ui-sref="receive" class="btn btn-default" disabled = "disabled">Update by Id</a>
+                    <a ui-sref="receive" class="btn btn-default" disabled = "disabled">Delete by Id</a>
+                </div>
+            </div>
+    
+            <c:RemoteTK ></c:RemoteTK>
+            <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"/>
+            <apex:includeScript value="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js" />
+            <apex:includeScript value="{!URLFOR($Resource.bumble_bundle, 'angular-route.js')}" />
+            <apex:includeScript value="{!URLFOR($Resource.bumble_bundle, 'angular-ui/angular-ui-router.js')}" />
+            <apex:includeScript value="{!$Resource.bumble_app_js}" />
+            <apex:includeScript value="{!$Resource.bumble_controllers_js}" />
+            <apex:includeScript value="{!$Resource.bumble_services_js}" />
+        </body>
+    </html>
+</apex:page>

@@ -1,0 +1,19 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <h1 ng-init="init()">Receive All</h1>
+    <table class="table table-striped table-condensed table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="record in records">
+                <td><a href="#/receive/{{record.Id}}">{{record.Name}}</a></td>
+                <td>{{record.Id}}</td>
+                <td><span ng-click="delete(record.Id)"><i class="glyphicon glyphicon-remove"></i></span></td>
+            </tr>
+        </tbody>
+    </table>
+</apex:page>

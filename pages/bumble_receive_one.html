@@ -1,0 +1,15 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <h1>Details : {{record.Name}} <a class="btn btn-default" href="#/update/{{record.Id}}">Edit</a></h1>
+    <table class="table table-striped table-condensed">
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td>{{record.Name}}</td>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <td>{{record.Id}}</td>
+            </tr>
+        </tbody>
+    </table>
+</apex:page>
