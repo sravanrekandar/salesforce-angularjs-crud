@@ -23,7 +23,7 @@ angular.module('bumble.services', [])
             };
         var create = function(record){
             var deferred = $q.defer();
-            remotTKClient.create('contact', {LastName: record.Name, accountId : '001f000000FV7SC' },
+            remotTKClient.create('contact', {LastName: record.Name },
                                  function(response){
                                    	deferred.resolve(response)
                                 },function(error){
